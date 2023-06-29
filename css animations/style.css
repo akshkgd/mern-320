@@ -1,0 +1,74 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn{
+    display: none;
+    transition: .3s;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 16px 36px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn:hover{
+    padding: 16px 48px;
+    background-color: black;
+    color: white;
+    transform: rotate(-4deg);
+}
+.card{
+    transition: .3s;
+    width: 300px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 14px;
+    margin: 60px auto;
+}
+.card img{
+    width: 100%;
+    border-radius: 14px;
+}
+.card:hover{
+    width: 350px;
+    transform: rotate(3deg);
+    border: 1px solid white;
+    box-shadow: 4px 6px 18px 6px #eee;
+}
+.flex{
+    justify-content: center;
+    display: flex;
+}
+.box{
+    margin-top: 100px;
+    animation-name: test-animation;
+    animation-duration: 1s;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+
+}
+@keyframes test-animation{
+    50%{
+        margin-left: 600px;
+        transform: rotate(360deg);
+        background-color: rgb(19, 19, 255);
+    }
+
+    100%{
+        margin-left: -600px;
+        /* border-radius: 50%; */
+        background-color: orangered;
+        
+        height: 160px;
+        width: 160px;
+    }
+}
+
+/* .box:hover{
+    padding-left: 300px;
+} */
