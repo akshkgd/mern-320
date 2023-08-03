@@ -1,0 +1,59 @@
+body{
+    /* background-color: red; */
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* filters, gradients, transform */
+
+.demo{
+    width:700px;
+    margin: 50px auto;
+    position: relative;
+}
+.img{
+    transition: .3s;
+    width: 100%;
+    border-radius: 12px;
+    /* filter: blur(3px) */
+    /* filter:brightness(120%) */
+    /* filter:contrast(160%) */
+    /* filter: hue-rotate(20deg); */
+    /* filter:saturate(10%) */
+    /* filter:grayscale(130%) */
+    /* filter:sepia(50%) */
+    /* filter: drop-shadow(16px -20px 0 blueviolet); */
+    /* transform: rotate(4deg); */
+    
+}
+.demo-content{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+}
+ .img:hover{
+    filter: blur(0);
+    /* transform: scale(1.1); */ 
+    /* transform: skewX(10deg); */
+
+}
+.test{
+    height: 80px;
+    width: 80px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transform: translate(50px, 70px);
+}
+.title{
+    background: #001CCF;
+    background: linear-gradient(to right, #001CCF 0%, #CF4C00 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
