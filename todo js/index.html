@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alert">Your personal todo list 💪 start adding your tasks and manage them 🥳</div>
+
+    <div class="container">
+        <div class="add-flex">
+            <h2 class="title">Manage your task <span class="name">@ashish</span></h2>
+            <button class="add-task" onclick="displayAddTask()"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg></button>
+        </div>
+        <p class="desc">Create a todo list to manage all your tasks in one place</p>
+        <div id="add-task">
+            <div class="flex">
+                <input class="taskInput" type="text" id="taskInput" placeholder="e.g. complete API assignment">
+                <input class="dateInput" type="datetime-local" id="dateInput" placeholder="e.g. complete API assignment">
+                
+                </div>
+                
+                <button class="btn" onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+
+    <div class="todos-container" id="todos-container">
+        <!-- <div class="card">
+            
+            <div class="card-flex">
+                <input type="checkbox" oncl class="checkbox">
+                <input class="task-edit" value="complete college assignments">
+                
+            </div>
+            <div class="dueDate">friday, 3rd Sept</div>
+        </div> -->
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
