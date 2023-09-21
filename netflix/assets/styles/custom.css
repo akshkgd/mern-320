@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+.bg{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+}
+.gradient{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0000006b;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.bg-content{
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}   
+.content-container{
+    width: 600px;
+    margin: 10px auto;
+}
+
+.title{
+    font-weight: 900;
+}
+.bg-flex{
+    margin: auto;
+    width: 560px;
+    display: flex;
+    gap:10px;
+}
+.bg-input{
+    width: 70%;
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0.506);
+    border:1px solid lightgray;
+    color: white;
+    border-radius: 4px;
+}
+.bg-input:focus{
+    outline: none;
+    border:2px solid white;
+    border-radius: 10px;
+}
+.bg-btn{
+    width: 30%;
+}
+section{
+    border-top: 8px solid rgba(64, 64, 64, 0.57);
+}
