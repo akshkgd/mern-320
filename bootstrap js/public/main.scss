@@ -1,0 +1,15 @@
+.test{
+    color: blueviolet;
+    text-decoration: underline rgb(255, 179, 0);
+}
+
+$modal-header-border-color: transparent;
+$modal-content-border-color: transparent;
+$modal-transition: transform .1s ease-out;
+$input-border-radius:    12px;
+$btn-border-radius:  12px;
+$modal-content-border-radius: 16px;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
+

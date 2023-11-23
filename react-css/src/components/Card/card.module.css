@@ -1,0 +1,16 @@
+.btn{
+    background-color: black;
+    padding: 16px 30px;
+    border:none;
+    border-radius: 120px;
+    color: white;
+    margin: 20px;
+    font-size: 16px;
+  }
+
+
+  .card{
+    font-style: 16px;
+    padding: 16px 30px;
+    
+  }

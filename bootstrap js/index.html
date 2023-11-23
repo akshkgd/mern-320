@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white " data-bs-theme="light">
+        <div class="container">
+          <a class="navbar-brand fw-bold " href="#">Codekaro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              
+              
+            </ul>
+            <form class="d-flex" role="search">
+              
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login Now
+                  </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div> -->
+                    <h2 class="fw-bold test">How to make bootstrap more interactive!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, numquam aliquid. Iste, recusandae! Consectetur, veniam atque?</p>
+                
+
+
+                <!-- accordian -->
+                <div class="accordion d-none" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3 class="fw-bold">This is accordian content</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod assumenda provident vel modi nihil molestiae. Cupiditate.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <!-- accordians end -->
+
+                      <!-- modal starts -->
+
+                      <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="modal-body px-4 py-5">
+            <div class="d-flex justify-content-between">
+          <h1 class="modal-title fw-bold fs-4" id="exampleModalLabel">Welcome Back 👋</h1>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore ratione odit!</p>
+            <div class="form-floating mb-2">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <button class="btn btn-primary w-100 py-3 mt-2 fs-6">Login Now</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+                      <!-- modal ends -->
+
+
+
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

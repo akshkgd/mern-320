@@ -1,0 +1,14 @@
+input{
+    border-radius: 12px !important;
+}
+.btn{
+    border-radius: 12px;
+}
+/* 
+.card{
+    border-radius: 14px;
+}
+.card-img-top{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+} */
