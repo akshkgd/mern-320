@@ -3,7 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 let items = ['milk', 'bread', 'butter'];
+import {Route, Routes, Link} from 'react-router-dom'
 import ItemComponent from './components/Item';
+import Home from './pages/Home';
+import Todos from './pages/Incompleted'
+import Completed from './pages/Completed';
 let todos = [
   {
     id: 1,
@@ -44,13 +48,35 @@ function App() {
 
   return (
     <>
-        <h1>html element</h1>
+        {/* <h1>html element</h1>
         <p>this is an html element</p>
         {
           todos.map((todo)=>{
               return <ItemComponent title={todo.task} status={todo.completed} desc={todo.description} />
           })
-        }
+        } */}
+      
+      <div className="navbar">
+        <h2 className="logo">Todoist</h2>
+        <div className='flex'>
+          <Link to="/todos">My Todos</Link>
+          <Link to="/completed">Completed Todos</Link>
+        </div>
+      </div>
+
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/todos' element={<Todos />} />
+            <Route path='/completed' element={<Completed />} />
+            <Route path='*' element={
+              <>
+                <h1>This page does not exit</h1>
+              </>
+            } />
+        </Routes>
+
+
+
         
 
     </>

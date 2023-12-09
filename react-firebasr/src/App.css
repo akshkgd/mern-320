@@ -42,7 +42,7 @@
 }
 
 .container{
-  width: 400px;
+  width: 460px;
   margin: 70px auto;
 }
 input{
@@ -84,4 +84,26 @@ input:focus{
   background-color: transparent;
   border: none;
   color: rgb(0, 93, 0);
+}
+.card{
+  margin: 10px auto;
+  background-color: #eee;
+  border-radius: 12px;
+  width: 450px;
+  padding: 16px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.delete-btn{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: gray;
+  border: none;
+}
+.delete-btn:hover{
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: red;
 }
