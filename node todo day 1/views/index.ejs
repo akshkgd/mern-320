@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-4" href="#">Todoist</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+              
+            </ul>
+            <form class="d-flex" role="search">
+                <a href="/api-access" class="btn me-3">Get Api</a>
+                <a href="/logout"  class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Logout
+                </a>
+                  
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5 mt-3">
+                <h2 class="fs-4 fw-bold mb-0">Manage your task <span class="text-muted">@<%=user.name%> </span></h2>
+                <p class="mb-4 small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis consectetur
+                    perferendis!</p>
+                <form action="/add-task" method="post">
+                    <div class="form-floating mb-2">
+                        <input type="text" style="border-radius: 12px;" class="form-control" id="floatingInput" name="todo"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">New thought? Add it!</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input type="date" class="form-control" name="dueDate" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Due Date</label>
+                      </div> -->
+                    <button type="submit" class="btn btn-dark px-4" style="padding: 12px; border-radius: 12px;">Create Task</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+
+                <ol class="list-group list-group-numbered">
+                    <% for(let i=0; i<todos.length; i++){ %>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold"><%= todos[i].title %></div>
+                        <% let dueDate = new Date(todos[i].dueDate) %>
+                        <%= dueDate.toLocaleDateString('en-us', {
+                            weekday: 'long',
+                            month: 'long',
+                            day: 'numeric',
+                          }) %> 
+                      </div>
+                      <a href="" class="btn"><i class="bi bi-trash3"></i></a>
+                    </li>
+                    <% } %>
+                    
+                  </ol>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
